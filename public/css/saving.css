@@ -1,0 +1,11 @@
+.box{
+    color: #fff;
+    padding: 20px;
+    display: none;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.esus{background-color: #47a386; }
+.contribution{ background: yellow; }
+.saving{ background: green; }
