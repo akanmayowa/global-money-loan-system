@@ -6,7 +6,6 @@
   <title></title>
   <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
   <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
@@ -20,7 +19,7 @@
 <body>
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
-      <div class="logo">
+      <div class="logo pt-5">
         <h1><a href="index.html"><span>Global Money</span></a></h1>
          <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
@@ -40,8 +39,8 @@
     </div>
   </header>
 
-  <section id="hero">
-    <div class="container">
+  <section id="hero"  >
+    <div class="container" style="margin-top: 20px">
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out">
@@ -51,14 +50,17 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        <div class="col-lg-4 order-1 order-lg-2 hero-img"data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/logo.JPG" class="img-fluid animated mt-5" style="width: 200%; height: 100%"  alt="" >
         </div>
       </div>
     </div>
 
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28 " preserveAspectRatio="none">
+
+
+        <defs>
         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
       </defs>
       <g class="wave1">
@@ -71,18 +73,20 @@
         <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
       </g>
     </svg>
+
+
   </section>
 
   <section id="about" class="faq section-bg">
     <div class="container">
 
       <div class="row content">
-        <div class="col-md-12 pt-5" data-aos="fade-up">
-          <h4 class="section-title text-muted">
+        <div class="col-md-12" data-aos="fade-up">
+          <h6 class="section-title" style="color: blue; font-style: normal"><p>
                Global Money has provided customers with competitive home equity loans, knowledgeable advice, and
                financial guidance since 2019,
                and we have the strength and longevity to continue meeting this goal into the future
-           </h4>
+              </p></h6>
         </div>
       </div>
     </div>
@@ -143,7 +147,7 @@
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
               <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="">Saving/Loan Cooperative</a></h3>
+              <h3><a href="">Cooperative Plan</a></h3>
             </div>
           </div>
 
@@ -169,7 +173,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>108 Adam Street, Anthony, Lagos Nigeria</p>
+                <p>108 Charles Street, Anthony, Lagos Nigeria</p>
               </div>
 
               <div class="email">
@@ -181,7 +185,7 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+234 706594333</p>
               </div>
 
             </div>

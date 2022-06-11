@@ -1,9 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <style>
-        body{
-            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.6923144257703081) 46%, rgba(0,212,255,1) 100%);
-        }
         .card{
             color:#0029ff;
             font-size:20px;
