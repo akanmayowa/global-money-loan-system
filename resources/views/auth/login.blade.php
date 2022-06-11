@@ -2,7 +2,7 @@
 @section('content')
     <style>
         body{
-            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,150,1) 67%);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.6923144257703081) 46%, rgba(0,212,255,1) 100%);
         }
         .card{
             color:#0029ff;
@@ -14,7 +14,6 @@
             height: 500px;
             border: 1px solid #9C9C9C;
         }
-
     </style>
 <div class="container mt-5">
     <div class="row justify-content-center mt-5">

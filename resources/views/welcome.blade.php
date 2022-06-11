@@ -82,7 +82,7 @@
                Global Money has provided customers with competitive home equity loans, knowledgeable advice, and
                financial guidance since 2019,
                and we have the strength and longevity to continue meeting this goal into the future
-           </p></h4>
+           </h4>
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@spitektechnologies.com.ng/</p>
+                <p>info@spitektechnologies.com.ng</p>
               </div>
 
               <div class="phone">
