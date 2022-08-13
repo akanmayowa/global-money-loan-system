@@ -2,11 +2,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/spitekte/public_html/
-    - /bin/cp -R .vscode $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=/home2/spitekte/loanapp/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R ./public/* $DEPLOYPATH
+    - /bin/cp ./public/js/*.js $DEPLOYPATH
+    - /bin/cp ./public/css/*.css $DEPLOYPATH/
