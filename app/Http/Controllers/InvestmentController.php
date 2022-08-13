@@ -10,16 +10,16 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 class InvestmentController extends Controller
 {
-    
+
     public function index()
     {
-        //
+        return view('admin.investment.index');
     }
 
-  
+
     public function create()
     {
-        return view('user.investment');
+
     }
 
 
@@ -36,7 +36,7 @@ class InvestmentController extends Controller
             'interestrate' => 'required',
             'transactiontype' => 'required',
               ]);
-   
+
       $investment = new Investment();
       $investment = Investment::create([
           'user_id' => Auth::user()->id,
@@ -47,9 +47,9 @@ class InvestmentController extends Controller
           'status'=> $request->status,
           'agent'=> $request->agent,
           'transactiontype' => $request->transactiontype,
-          'interestrate' => $request->interestrate, 
+          'interestrate' => $request->interestrate,
       ]);
-     
+
      Alert::success('Success Title', 'Success Message');
      return redirect()->back();
     }
@@ -70,7 +70,7 @@ class InvestmentController extends Controller
         //
     }
 
-  
+
     public function destroy(Investment $investment)
     {
         //

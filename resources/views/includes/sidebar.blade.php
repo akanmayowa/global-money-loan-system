@@ -10,10 +10,7 @@
                              <li><a href="{{ route('contacts.index') }}">All Email</a></li>
                          </ul>
                      </li>
-
-                     <li><a  href="{{ route('admin.sms.index') }}"><i class="fa fa-commenting-o" aria-hidden="true"></i> Sms </a>
-                    </li>
-
+                     <li><a  href="{{ route('admin.sms.index') }}"><i class="fa fa-commenting-o" aria-hidden="true"></i> Sms </a></li>
                      <li><a><i class="fa fa-folder"></i> Savings <span class="fa fa-chevron-down"></span></a>
                          <ul class="nav child_menu">
                              <li><a href="{{ route('admin.saving.index') }}">Saving</a></li>
@@ -22,15 +19,12 @@
                              <li><a href="">All Transaction</a></li>
                          </ul>
                      </li>
-
                      <li><a><i class="fa fa-usd"></i> Payment <span class="fa fa-chevron-down"></span></a>
                          <ul class="nav child_menu">
-                             <li><a href="{{ route('admin.payment') }}">Payments</a></li>
                              <li><a href="{{ route('admin.paymentindex') }}">All Payment</a></li>
                          </ul>
                      </li>
-
-
+                     <li><a href="{{ route('admin.investment.index') }}" ><i class="fa fa-btc"></i> Investment </a></li>
                      <li><a><i class="fa fa-money"></i>Loan<span class="fa fa-chevron-down"></span></a>
                          <ul class="nav child_menu">
                              <li><a href="{{ route('admin.loan.index') }}">Loan</a></li>
@@ -41,6 +35,7 @@
                          </ul>
                      </li>
                      <li><a href="{{ route('bank.index') }}"><i class="fa fa-university"></i>Bank</a></li>
+                     <li><a href="{{ route('admin.report.savings') }}"><i class="fa fa-file-pdf-o"></i>Report</a></li>
                      <li><a href="{{ route('admin.profile.index', ['id'=>auth()->user()->id]) }}"><i class="fa fa-user-plus"></i>Profile</a></li>
                     </ul>
              </div>

@@ -13,13 +13,12 @@ class CreatePaymentsTable extends Migration
             $table->id();
             $table->bigInteger('transaction_id');
             $table->bigInteger('user_id');
-            $table->string('fullname');
+            $table->string('full_name');
             $table->decimal('amount', 10, 4);
             $table->bigInteger('loan_id');
             $table->bigInteger('bank_id');
             $table->bigInteger('bank_account');
             $table->date('pay_date');
-            $table->decimal('amount_to_pay',10,5);
             $table->boolean('status')->default(0);
             $table->timestamps();
         });

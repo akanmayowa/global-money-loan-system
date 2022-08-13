@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminController;
@@ -50,6 +51,17 @@ Route::get('/user/index/appuser/', [App\Http\Controllers\UserController::class, 
 Route::get('/admin/index/', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index')->middleware('admin');
 ///Admin Route
 
+//report
+Route::get('admin/report/loan', [ReportController::class, 'fetchLoanRecord'])->name('admin.report.loan');
+Route::get('admin/report/payment', [ReportController::class, 'fetchPaymentRecord'])->name('admin.report.payment');
+Route::get('admin/report/investment', [ReportController::class, 'fetchInvestmentRecord'])->name('admin.report.investment');
+Route::get('admin/report/savings', [ReportController::class, 'fetchSavingRecord'])->name('admin.report.savings');
+Route::get('admin/report/profit-loss', [ReportController::class, 'fetchProfitLossRecord'])->name('admin.report.profit-loss');
+
+
+//investment
+Route::get('/admin/investment/index', [App\Http\Controllers\InvestmentController::class, 'index'])->name('admin.investment.index');
+
 //bank
 Route::get('banks', [BankController::class, 'index'])->name('bank.index');
 Route::post('banks/store', [App\Http\Controllers\BankController::class, 'store'])->name('banks.store');
@@ -71,7 +83,6 @@ Route::post('/user/profile/update/', [App\Http\Controllers\ProfileController::cl
 Route::get('/user/saving/', [App\Http\Controllers\SavingController::class, 'create'])->name('user.saving');
 
 //Investment
-Route::get('/user/investment/', [App\Http\Controllers\InvestmentController::class, 'create'])->name('user.investment');
 
 //payment
 Route::get('/admin/payment/', [PaymentController::class, 'create'])->name('admin.payment');

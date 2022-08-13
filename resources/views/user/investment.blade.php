@@ -1,4 +1,4 @@
-@extends('layouts.appuser')
+@extends('layouts.appadmin')
 @section('content')
 <div class="right_col" role="main">
  <br />

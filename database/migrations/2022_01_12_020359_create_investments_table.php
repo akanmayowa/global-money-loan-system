@@ -19,7 +19,7 @@ class CreateInvestmentsTable extends Migration
             $table->boolean('status')->default(0);
             $table->string('agent')->nullable(0);
             $table->decimal('interestrate', 10, 4);
-            $table->string('transactiontype')->default('credit');
+            //  $table->string('transactiontype')->default('credit');
             $table->timestamps();
         });
     }

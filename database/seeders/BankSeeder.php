@@ -7,27 +7,30 @@ use App\Models\Bank;
 
 class BankSeeder extends Seeder
 {
-    
+
     public function run()
-    {
-        $bank =  Bank::create([
+   {
+         Bank::create([
             'bankname' => 'GTBANK',
             'sortcode'=>'101',
         ]);
-        
 
-        $bank =  Bank::create([
+
+         Bank::create([
         'bankname' => 'Wema Bank',
         'sortcode'=>'102',
          ]);
 
 
 
-         $bank =  Bank::create([
+         Bank::create([
         'bankname' => 'Fideliyty Bank',
         'sortcode'=>'103'
+         ]);
 
-]);
-
+          Bank::create([
+              'bankname' => 'Union Bank',
+              'sortcode'=>'104'
+          ]);
 }
 }

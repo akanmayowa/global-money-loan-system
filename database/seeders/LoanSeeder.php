@@ -3,31 +3,42 @@
 namespace Database\Seeders;
 
 use App\Models\Loan;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
+use Faker\Factory as Faker;
+
 
 class LoanSeeder extends Seeder
 {
 
     public function run()
     {
-        Loan::create([
-            'loan_id' => 1021,
-            'user_id'=> 1,
-            'firstname'=>'zuma jacob',
-            'last_name'=>'multak',
-            'bank_id' => '3345',
-            'dob'=> '2001-05-11',
-            'bank_account' => '0107815122',
-            'phone_number' => 23333111,
-            'amount' => 10339,
-            'status' => 0,
-            'bvn' => 1123378996,
-            'agent' => 'Admin Boss',
-            'date_release'  => '2120-10-10',
-            'pay_date' => '2120-10-10',
-            'tenor' => 60,
-            'interestrate' => 3,
-          ]);
+        $faker = Faker::create();
+        $counter = 1;
+        $loan_id = 981;
+        while( $counter <= 100)
+        {
 
+            Loan::create([
+                'loan_id' => $loan_id++,
+                'user_id'=> 1,
+                'firstname'=> $faker->name,
+                'last_name'=>  $faker->name,
+                'bank_id' => $faker->randomElement([1,2,3,4]),
+                'dob'=> Carbon::now(),
+                'bank_account' => $faker->numerify('##########'),
+                'phone_number' => $faker->numerify('#######'),
+                'amount' => $faker->unique()->numberBetween(1000, 10000),
+                'status' => 0,
+                'bvn' => $faker->numerify('##########'),
+                'agent' => $faker->name,
+                'date_release'  => Carbon::now(),
+                'pay_date' => Carbon::now(),
+                'tenor' => $faker->randomElement([90,180,360]),
+                'interestrate' => $faker->randomElement([1,2,3,4,5])
+            ]);
+
+            $counter++;
+        }
     }
 }
